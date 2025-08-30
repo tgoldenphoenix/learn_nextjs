@@ -1,3 +1,5 @@
+// Nested Dynamic Routes
+// ~/products/1/reviews/1
 import { notFound } from "next/navigation";
 
 // function getRandomInt(count: number) {

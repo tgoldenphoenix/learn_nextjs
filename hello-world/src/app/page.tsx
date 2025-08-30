@@ -20,7 +20,7 @@ export default function Home() {
             </code>
             .
           </li>
-          <li>Hello world</li>
+          <li>Hello anhao</li>
         </ol>
 
         <div className="flex gap-4 items-center flex-col sm:flex-row">
