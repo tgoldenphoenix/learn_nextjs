@@ -16,6 +16,7 @@ export default function ProductDetailsLayout({
     <>
       {children}
       <h2>Features products</h2>
+      <p>This feature section is a layout inside <code>products/[productId]/layout.tsx</code></p>
     </>
   );
 }

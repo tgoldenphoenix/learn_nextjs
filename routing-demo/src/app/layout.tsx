@@ -23,7 +23,7 @@ export default function RootLayout({
             padding: "1rem",
           }}
         >
-          <p>Header</p>
+          <p>Header (inside layout.tsx)</p>
         </header>
         {/* <ErrorWrapper> */}
         {children}
@@ -34,7 +34,7 @@ export default function RootLayout({
             padding: "1rem",
           }}
         >
-          <p>Footer</p>
+          <p>Footer (inside layout.tsx)</p>
         </footer>
       </body>
     </html>

@@ -21,10 +21,23 @@ export const generateMetadata = async ({
   };
 };
 
+// function delay(ms: number) {
+//   return new Promise(resolve => {
+//     setTimeout(resolve, ms);
+//   });
+// }
+
 export default async function ProductDetails({ params }: Props) {
   // Default server component
-  // await the resolve the promise and get the dynamic segment
+  // await the resolve promise and get the dynamic segment
   // This `productId` can be a string number like `12`, `iphone`
   const productId = (await params).productId;
-  return <h1>Details about product {productId}</h1>;
+
+  // this will block the render of the `return`
+  // `await` only pause the execution the the async function, not the main thread
+  // await delay(5000);
+
+  return (<>
+    <h1>Details about product {productId}</h1>
+  </>) 
 }

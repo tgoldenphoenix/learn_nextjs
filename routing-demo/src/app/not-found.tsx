@@ -1,3 +1,4 @@
+// file name must be exactly "not-found"
 export default function NotFound() {
   return (
     <div>

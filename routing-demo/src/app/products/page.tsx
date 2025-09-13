@@ -1,3 +1,5 @@
+// Dynamic Routes using square brackets []
+
 import Link from "next/link";
 
 export default function ProductList() {
@@ -21,6 +23,8 @@ export default function ProductList() {
       <h2>
         <Link href={`products/${productId}`}>Product {productId}</Link>
       </h2>
+
+      <p>This page demonstrate <strong>Dynamic Routes</strong> using square brackets []</p>
     </>
   );
 }

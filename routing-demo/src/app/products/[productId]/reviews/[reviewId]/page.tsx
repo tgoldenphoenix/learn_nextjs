@@ -1,11 +1,11 @@
-// Nested Dynamic Routes
-// ~/products/1/reviews/1
 import { notFound } from "next/navigation";
 
 // function getRandomInt(count: number) {
 //   return Math.floor(Math.random() * count);
 // }
 
+// Nested Dynamic Routes
+// ~/products/1/reviews/1
 export default async function ProductReview({
   params,
 }: {
@@ -18,7 +18,8 @@ export default async function ProductReview({
 
   const { productId, reviewId } = await params;
 
-  if (parseInt(reviewId) > 1000) {
+  // chỉ bán 100 sản phẩm
+  if (parseInt(productId) > 100) {
     notFound();
   }
   return (
