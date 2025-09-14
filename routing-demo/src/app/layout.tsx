@@ -1,3 +1,7 @@
+/* this `layout.txs` is the root layout
+it is NOT optional, auto-generated if not exist
+root layout is apply to all the nested routes
+*/
 import { Metadata } from "next";
 // import { ErrorWrapper } from "./error-wrapper";
 
